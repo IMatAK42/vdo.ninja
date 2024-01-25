@@ -263,15 +263,7 @@
 				>
 				<i style="cursor: pointer; color: #d9e4eb; padding: 2px; margin: 2px 2px 0 0; font-size: 140%;" class="las la-bug" aria-hidden="true"></i>
 			</span>
-			<span
-					id="helpbutton"
-					title="Show Help Info" 
-					onclick="warnUser('For support, please browse https://reddit.com/r/vdoninja or join the live chat on Discord at https://discord.vdo.ninja.\n\nThe Docs also contains many help guides and advanced settings, located at https://docs.vdo.ninja.\n\nTo access the video stats menu, hold CTRL (command) and Left-Click on a video. Most video issues can be fixed by using Wired Internet instead of Wi-Fi.')"
-					style="cursor: pointer; display:none;"
-					alt="How to Use This with OBS"
-				>
-				<i style="cursor: pointer;  color: #d9e4eb; padding: 2px; margin: 2px 2px 0 0; font-size: 140%;" class="las la-question-circle" aria-hidden="true"></i>
-			</span>
+			
 			<span title="Language Options" onclick="toggle(document.getElementById('languages'));" aria-label="language options" aria-pressed="false" id="translateButton">
 				<i style="cursor: pointer;color: #d9e4eb; padding: 2px; margin: 2px 2px 0 0; font-size: 140%;" class="las la-language" aria-hidden="true"></i>
 			</span>
@@ -375,16 +367,6 @@
 								<span data-translate="show-tips">Show me some tips..</span>
 							</button>
 							
-							<ul style="max-width: 500px; display: none; text-align: left;" class="roomnotes" id="roomnotes">
-								<span data-translate="added-notes" >
-									<i>Important Tips:</i>
-									<br><br>
-									<li>Disabling video sharing between guests will improve performance</li>
-									<li>Invite only guests to the room that you trust.</li>
-									<li>The "Recording" option is considered experimental.</li>
-									<li><a href="https://params.vdo.ninja" style="color:black;"><u>Advanced URL parameters</u></a> are available to customize rooms.</li>
-								</span>
-							</ul>
 							<br />
 							<br />
 							<i data-translate="looking-to-just-chat-and-not-direct">Looking to just chat and not direct?</i>
@@ -705,10 +687,7 @@
 								</span>
 							</div>
 						</div>
-						<div class="invite_setting_group_links">See the 
-							<a target="_blank" href="https://docs.vdo.ninja/advanced-settings">documentation</a> for a list of all options and details.<br /><br />
-							Try out the advanced <a target="_blank" href="https://invite.vdo.ninja/">invite generator</a> here as well.
-						</div>
+						
 					</span>
 				</div>
 				<div class="outer close">
@@ -797,11 +776,6 @@
 				<i style="margin-top:30px;font-size:600%;overflow:hidden;" class="largeDarkIcon las la-blender"></i>
 			</div>
 			
-			<div id="container-14" class="column columnfade pointer rounded card hidden" style="overflow: hidden;" onclick="window.location = 'https://versus.cam';">
-				<h2><span data-translate="try-out-versus-cam">Multi-Stream Monitor</span></h2>
-				<i style="margin-top:30px;font-size:600%;overflow:hidden;" class="largeDarkIcon las la-gamepad"></i>
-			</div>
-			
 			<div id="container-15" class="column columnfade pointer rounded card hidden" style="overflow: hidden;" onclick="window.location = './comms.html';">
 				<h2><span data-translate="voice-comms-app">Group Voice Comms</span></h2>
 				<i style="margin-top:30px;font-size:600%;overflow:hidden;" class="largeDarkIcon las la-comments"></i>
@@ -812,34 +786,18 @@
 				<i style="margin-top:30px;font-size:600%;overflow:hidden;" class="largeDarkIcon las la-book-open"></i>
 			</div>
 			
-			<div id="container-13" class="column columnfade pointer rounded card hidden" style="overflow: hidden;" onclick="window.location = 'https://linkgen.vdo.ninja';">
-				<h2><span data-translate="wizard-link-generator">Wizard Link Generator</span></h2>
-				<i style="margin-top:30px;font-size:600%;overflow:hidden;" class="largeDarkIcon las la-hat-wizard"></i>
-			</div>
-			
 			<div id="container-10" class="column columnfade pointer rounded card hidden" style="overflow: hidden;" onclick="window.location = 'https://docs.vdo.ninja';">
 				<h2><span data-translate="get-full-documentation">Full Documentation</span></h2>
 				<i style="margin-top:30px;font-size:600%;overflow:hidden;" class="largeDarkIcon las la-info"></i>
 			</div>
 			
-			<div id="container-11" class="column columnfade pointer rounded card hidden" style="overflow: hidden;" onclick="window.location = 'https://github.vdo.ninja';">
-				<h2><span data-translate="get-the-source-code">Source Code</span></h2>
-				<i style="margin-top:30px;font-size:600%;overflow:hidden;" class="largeDarkIcon las la-code-branch"></i>
-			</div>
+			
 			
 			<div id="container-12" class="column columnfade pointer rounded card hidden" style="overflow: hidden;" onclick="window.location = 'https://docs.vdo.ninja/getting-started/sponsor';">
 				<h2><span data-translate="show-your-support">Show Your Support</span></h2>
 				<i style="margin-top:30px;font-size:600%;overflow:hidden;" class="largeDarkIcon las la-heartbeat"></i>
 			</div>
 			
-			<div id="container-17" class="column columnfade pointer rounded card hidden" style="overflow: hidden;" onclick="window.location = './whip';">
-				<h2><span data-translate="publish-via-whip">Publish via WHIP</span></h2>
-				<i style="margin-top:30px;font-size:600%;overflow:hidden;" class="largeDarkIcon las la-broadcast-tower"></i>
-			</div>
-			
-			<div id="container-16" class="column columnfade pointer rounded card hidden" style=" overflow-y: auto;">
-				<h2><span data-translate="share-whepsrc">Share via WHEP</span></h2>
-				<i style="margin-top:30px;font-size:560%;overflow:hidden;" class="largeDarkIcon las la-broadcast-tower"></i>
 				<div class="container-inner">
 					<br />
 					<div id="previewWhepSource"></div>
@@ -874,53 +832,13 @@
 			</div>
 			
 			<div id="info" class="fullcolumn columnfade">
-				<center>
-					<div class="infoblob" align="left">
-						<span data-translate="info-blob">
-							<h2>What is VDO.Ninja</h2>
-							<br />
-							<li>100% <b>free</b>; no downloads; no personal data collection; no sign-in</li>
-							<li>Bring live video from your smartphone, remote computer, or friends directly into OBS or other studio software.</li>
-							<li>We use cutting edge Peer-to-Peer forwarding technology that offers privacy and ultra-low latency</li>
-							<br />
-							<li>Youtube video 
-								<i class="lab la-youtube"></i>
-								<a href="https://www.youtube.com/watch?v=QaA_6aOP9z8&list=PLWodc2tCfAH1l_LDvEyxEqFf42hOBKqQM&index=1" alt="Youtube video demoing VDO.Ninja">Demoing it here</a>
-							</li>
-							
-							<br />
-							<i>
-								<a href="https://docs.vdo.ninja/common-errors-and-known-issues/known-issues" title="For more known issues, click here" target="_blank"><span style="color: red;">Known issues:</span></a>
-							</i>
-							<br />
-							<li>
-								If the video fails to load in OBS Studio, where the browser source remains blank, try disabling hardware-acceleration or 
-								<a href='https://docs.vdo.ninja/common-errors-and-known-issues/obs.ninja-doesnt-show-up-in-obs-or-is-choppy' title="link out to the vdo.ninja help guide for OBS Studio" target="_blank">refer to this help guide</a> for more.
-							</li>
-							<li>
-								Samsung smartphones (A-series) may fail to publish video with some mobile browsers; try using Firefox Mobile or the native <a href='https://docs.vdo.ninja/getting-started/native-mobile-app-versions#android-download-link'>Android app</a> in these cases.
-							</li>
-							<br />
-							<h4>
-								<span style="color:#daad09;">Welcome to VDO Ninja! We've rebranded!  Nothing else is changing and we're staying 100% free.</span>
-							</h4>
-							<br />
-							🌻 Site last updated on July 25th.  Development <a target="_blank" href='https://updates.vdo.ninja/'>updates are here.</a>
-							<br />
-							<br />
-							<h3>
-							   🛠 For support, join the <a href="https://discord.gg/T4xpQVv">Discord <i class="lab la-discord"></i></a> or see the <a href="https://www.reddit.com/r/VDONinja/">sub-reddit <i class="lab la-reddit-alien"></i></a>. The <a href="https://docs.vdo.ninja/">documentation is here</a> and my personal email is <i>steve@seguin.email</i>
-							</h3> 
-								
-						</span>
-					</div>
-				</center>
+			
 			</div>
 			<form method="post" onsubmit="setFormSubmitting()" style="display: none;">
 				<input type="submit" />
 			</form>
 			<div id="credits" class="credits">
-				<a href='https://github.com/steveseguin/vdoninja'>VDO.Ninja, by Steve Seguin</a>
+				<a href='https://github.com/steveseguin/vdoninja'>SiS EYES</a>
 			</div>
 		</div>
 		<div id="directorlayout" class="hidden directorsgrid">
@@ -957,7 +875,6 @@
 						<li>Adding &showonly=SOME_OBS_VIRTUALCAM to the guest invite links allows for only a single video to be seen by the guests; this can be output of the OBS Virtual Camera for example</li>
 						<br />
 						
-						For advanced URL options and parameters, <a href="https://docs.vdo.ninja/advanced-settings">see the Wiki.</a>
 					</span>
 				</div>
 			</div>
@@ -1322,10 +1239,7 @@
 						</div>
 					</div>
 				</div>
-				<a href="https://params.vdo.ninja" style="color:#888;" target="_blank" >
-					<div style="display: block;float:right;font-size:70%;z-index:30;bottom:6px;right:10px;position:relative;color:#888;" ><span data-translate="learn-more-about-params">Learn more about URL parameters at </span><span style="text-decoration: underline;">params.vdo.ninja</span>
-					</div>
-				</a>
+				
 			</div>
 			<div id="hiddenElements"></div>
 			<div id='guestFeeds' style="display:none">
@@ -2250,9 +2164,7 @@
 					<span style="font-size:117%"><i class="las la-key" style="margin: 10px;"></i>Remote OBS passcode:</span>
 					<input style="margin:0 10px;display:inline-block;padding: 8px 10px 6px 10px;" placeholder="Enter the remote OBS password here" />
 				</div>
-				<small style="margin: 20px 0 0 0;display:block;" >
-					See the <a href="https://docs.vdo.ninja/advanced-settings/upcoming-parameters/and-obs" style="color:#314350; cursor:pointer;" target="_blank">documentation</a> for help on using the remote OBS controller
-				</small>
+				
 				<div id="debugRemoteOBSControl" class="hidden">
 				</div>
 			</div>
@@ -2377,9 +2289,7 @@
 		</div>
 		<div id="screenPopup" class="popup-screen">
 			<button onclick="getById('screenPopup').style.display='none';margin:0;padding:0;">Close Window</button>
-			<div>See the 
-				<a style="text-decoration: none; color: blue;" target="_blank" href="https://docs.vdo.ninja/advanced-settings">documentation</a> for more options and info.
-			</div>
+			
 		</div>
 		<div id="messagePopup" class="popup-message"></div>
 		<div id="languages" style="right: 20px; bottom: 30px; display:none;" class="popup-message" style="display: none;">
@@ -2403,9 +2313,7 @@
 				<li><a onclick="changeLg('eu');toggle(document.getElementById('languages'));" style="cursor: pointer;" data-tz="Europe/Euskara">Basque</a></li>
 				<li><a onclick="changeLg('pig');toggle(document.getElementById('languages'));" style="cursor: pointer;">Pig Latin</a></li>
 			</ul>
-			<br style="line-height: 0.3;" />
-			<i class="las la-exclamation-circle"></i><a href="https://github.com/steveseguin/vdoninja/tree/master/translations" target="_blank" rel="noopener noreferrer" data-translate='add-more-here'>Add More Here!</a>
-			<br />
+			
 		</div>
 		<div id="calendar" style="right: 20px; bottom: 30px;display:none;" class="popup-message" >
 			<b  data-translate='add-to-calendar'>Add details to your Calendar:</b>
